@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/CarExo/CarExo.iml" filepath="$PROJECT_DIR$/CarExo/CarExo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ExoInterface/ExoInterface.iml" filepath="$PROJECT_DIR$/ExoInterface/ExoInterface.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/Java.iml" filepath="$PROJECT_DIR$/.idea/Java.iml" />
+      <module fileurl="file://$PROJECT_DIR$/OoCours/OoCours.iml" filepath="$PROJECT_DIR$/OoCours/OoCours.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Ooexo02/Ooexo02.iml" filepath="$PROJECT_DIR$/Ooexo02/Ooexo02.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cours/cours.iml" filepath="$PROJECT_DIR$/cours/cours.iml" />
+    </modules>
+  </component>
+</project>
