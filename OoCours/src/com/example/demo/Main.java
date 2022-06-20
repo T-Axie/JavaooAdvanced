@@ -14,13 +14,13 @@ public class Main {
         Sportif Marion = new Sportif("Nitelet","Marion", 17012000);
         Sportif Aurelie = new Sportif("Macron","Aurelie", 17012000);
 
-        Competition Tenis = new Competition(3);
+        Competition Tennis = new Competition(3);
 
-        Tenis.subscribe(David);
-        Tenis.subscribe(Charles);
-        Tenis.subscribe(Henri);
+        Tennis.subscribe(David);
+        Tennis.subscribe(Charles);
+        Tennis.subscribe(Henri);
 
-        System.out.println(Tenis.getListParticipant());
+        System.out.println(Tennis.getListParticipant());
         }
     }
 }

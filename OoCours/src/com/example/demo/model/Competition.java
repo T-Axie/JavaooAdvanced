@@ -1,10 +1,6 @@
 package com.example.demo.model;
-
 import com.example.demo.exeption.*;
-import com.example.demo.exeption.PartipantDoubleException;
-
 import java.util.ArrayList;
-import java.util.Collections;
 
 public class Competition {
     Integer limitParticipant;
@@ -72,9 +68,7 @@ public class Competition {
         for (Sportif sportif: competition.getListParticipant()
              ) {
             sportif.setWinNumber();
-
         }
-
         this.isFinish = true;
     }
 
