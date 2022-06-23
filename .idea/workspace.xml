@@ -5,16 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="43d85d13-6434-4d0d-858c-37a6b6e2f01d" name="Changes" comment="Home comit">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/Java.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Java.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OoCours/src/com/example/demo/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/OoCours/src/com/example/demo/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OoCours/src/com/example/demo/exeption/AlreadyFinishException.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/OoCours/src/com/example/demo/exeption/ParticipantDoubleException.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/OoCours/src/com/example/demo/exeption/ParticipantLimitException.java" beforeDir="false" afterPath="$PROJECT_DIR$/OoCours/src/com/example/demo/exeption/ParticipantLimitException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OoCours/src/com/example/demo/model/Competition.java" beforeDir="false" afterPath="$PROJECT_DIR$/OoCours/src/com/example/demo/model/Competition.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OoCours/src/com/example/demo/model/Sportif.java" beforeDir="false" afterPath="$PROJECT_DIR$/OoCours/src/com/example/demo/model/Sportif.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DemoOOAvance/src/bstorm/akimts/oo/avance/exo/CompetitionImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/DemoOOAvance/src/bstorm/akimts/oo/avance/exo/CompetitionImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,7 +21,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/DemoOOAvance" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -93,7 +85,7 @@
       <workItem from="1655794319053" duration="17113000" />
       <workItem from="1655815436949" duration="4553000" />
       <workItem from="1655964370825" duration="18000" />
-      <workItem from="1655965092249" duration="5042000" />
+      <workItem from="1655965092249" duration="8468000" />
     </task>
     <task id="LOCAL-00001" summary="Home comit">
       <created>1655760509228</created>
