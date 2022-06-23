@@ -4,7 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="43d85d13-6434-4d0d-858c-37a6b6e2f01d" name="Changes" comment="Home comit" />
+    <list default="true" id="43d85d13-6434-4d0d-858c-37a6b6e2f01d" name="Changes" comment="Home comit">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Java.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Java.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OoCours/src/com/example/demo/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/OoCours/src/com/example/demo/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OoCours/src/com/example/demo/exeption/AlreadyFinishException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OoCours/src/com/example/demo/exeption/ParticipantDoubleException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OoCours/src/com/example/demo/exeption/ParticipantLimitException.java" beforeDir="false" afterPath="$PROJECT_DIR$/OoCours/src/com/example/demo/exeption/ParticipantLimitException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OoCours/src/com/example/demo/model/Competition.java" beforeDir="false" afterPath="$PROJECT_DIR$/OoCours/src/com/example/demo/model/Competition.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OoCours/src/com/example/demo/model/Sportif.java" beforeDir="false" afterPath="$PROJECT_DIR$/OoCours/src/com/example/demo/model/Sportif.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -29,13 +40,20 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "C:/Users/Gebruiker/Desktop/Cours Java/Java"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/JAVA/IdeaProjects/Javaoo&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Gebruiker\Desktop\Cours Java\Java\JavaNextLevel\untitled\src\com.example.demo" />
@@ -72,6 +90,10 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1655706281045</updated>
+      <workItem from="1655794319053" duration="17113000" />
+      <workItem from="1655815436949" duration="4553000" />
+      <workItem from="1655964370825" duration="18000" />
+      <workItem from="1655965092249" duration="5042000" />
     </task>
     <task id="LOCAL-00001" summary="Home comit">
       <created>1655760509228</created>
@@ -82,6 +104,9 @@
     </task>
     <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">

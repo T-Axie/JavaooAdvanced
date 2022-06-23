@@ -4,29 +4,20 @@ import java.text.DateFormat;
 import java.text.FieldPosition;
 import java.text.ParsePosition;
 import java.text.SimpleDateFormat;
+import java.time.LocalDate;
 import java.util.Date;
 import java.util.Random;
 
 public class Sportif {
-    String name;
-    String firstName;
-    DateFormat birth;
-    Integer winNumber;
+    private String name;
+    private String firstName;
+    private final LocalDate birth;
+    private Integer winNumber;
 
-    public Sportif(String name, String firstName, DateFormat birth) {
+    public Sportif(String name, String firstName, LocalDate birth) {
         this.name = name;
         this.firstName = firstName;
-        this.birth = new DateFormat() {
-            @Override
-            public StringBuffer format(Date date, StringBuffer toAppendTo, FieldPosition fieldPosition) {
-                return null;
-            }
-
-            @Override
-            public Date parse(String source, ParsePosition pos) {
-                return null;
-            }
-        };
+        this.birth = birth;
         this.winNumber = 0;
     }
 
@@ -46,7 +37,7 @@ public class Sportif {
         this.firstName = firstName;
     }
 
-    public DateFormat getBirth() {
+    public LocalDate getBirth() {
         return birth;
     }
 
@@ -60,7 +51,7 @@ public class Sportif {
 
     public static int getNumber() {
         Random rd = new Random();
-        return rd.nextInt(1, 100);
+        return rd.nextInt(1, 101);
     }
 
     @Override

@@ -1,32 +1,28 @@
 package com.example.demo.model;
 import com.example.demo.exeption.*;
-import java.util.ArrayList;
+
+import java.util.*;
 
 public class Competition {
-    Integer limitParticipant;
-    ArrayList<Sportif> listParticipant;
-    Boolean isFinish;
+    private final Integer limitParticipant;
+    private final Map<Sportif, Integer> participant;
+    private Boolean isFinish;
 
     public Competition(Integer limitParticipant) {
-        this.limitParticipant = limitParticipant;
-        this.listParticipant = new ArrayList<>();
+        if (limitParticipant < 0)
+            throw  new IllegalArgumentException("Limite de participant invalide");
+        this.limitParticipant = 0;
         this.isFinish = false;
+        this.participant = new HashMap<>();
     }
 
+//region Getter & Setter
     public Integer getLimitParticipant() {
         return limitParticipant;
     }
 
-    public void setLimitParticipant(Integer limitParticipant) {
-        this.limitParticipant = limitParticipant;
-    }
-
-    public ArrayList<Sportif> getListParticipant() {
-        return listParticipant;
-    }
-
-    public void setListParticipant(ArrayList<Sportif> listParticipant) {
-        this.listParticipant = listParticipant;
+    public Map<Sportif, Integer> getParticipant() {
+        return participant;
     }
 
     public Boolean getFinish() {
@@ -36,48 +32,55 @@ public class Competition {
     public void setFinish(Boolean finish) {
         isFinish = finish;
     }
+//endregion
 
-    public void subscribe (Sportif sportif) {
-        if (listParticipant.size() < limitParticipant) {
+    public void subscribe (Sportif sportif) throws ParticipantLimitException {
+        if (participant.size() >= limitParticipant && limitParticipant !=0) {
             throw new ParticipantLimitException();
         }
         if (isFinish) {
             throw new GameFinishException();
         }
-        if (this.listParticipant.contains(sportif)) {
-            throw new ParticipantDoubleException();
+        if (participant.containsKey(sportif)) {
+            throw new IllegalArgumentException("Sportif déjà inscrit");
         }
-        this.listParticipant.add(sportif);
+        participant.put(sportif, null);
 
     }
-    public void unsubcribe (Sportif sportif) {
+    public void unSubcribe (Sportif sportif) {
         if (isFinish) {
             throw new GameFinishException();
         }
-        if (!this.listParticipant.contains(sportif)) {
-            throw new NotSubscribeException();
+        if (!participant.containsKey(sportif)) {
+            throw new IllegalArgumentException("Sportif non-inscrit");
         }
-        if (this.listParticipant.contains(sportif)) {
-            listParticipant.remove(sportif);
-        }
+        participant.remove(sportif);
     }
     public void launchTheGame (Competition competition) {
-        if (this.isFinish) {
-            throw new AlreadyFinishException();
+        if (isFinish) {
+            throw new IllegalStateException();
         }
-        for (Sportif sportif: competition.getListParticipant()
+        if (participant.size() <= 1)
+            throw new IllegalStateException("Pas de participant");
+        for (Sportif sportif: participant.keySet()
              ) {
-            sportif.setWinNumber();
+            participant.put(sportif, sportif.getWinNumber());
         }
-        this.isFinish = true;
+        isFinish = true;
     }
 
-    public String winner (Competition competition) {
-        for (Sportif sportif: this.listParticipant
-             ) {
+    public Set<Sportif> getWinner (Competition competition) {
+        int maxPerf = 0;
+        if (!isFinish)
+            throw  new IllegalStateException("La partie n'est pas encore lancée...");
 
+        Collection<Integer> values = participant.values();
+
+        for (Integer value: values) {
+            if (value > maxPerf)
+                maxPerf = value;
         }
+        Set<Sportif> winner = new HashSet<>();
         return null;
     }
-
 }
